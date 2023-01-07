@@ -11,7 +11,7 @@ class Program
         int useNumber = -1;
         while (useNumber !=0)
         {
-            Console.Write("Entry a number (0 to quit): ");
+            Console.Write("Enter a number (0 to quit): ");
             string useResponse = Console.ReadLine();
             useNumber = int.Parse(useResponse);
 
