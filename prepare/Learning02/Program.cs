@@ -17,7 +17,7 @@ class Program
         job2._endYear = 2023;
 
         Resume myResume = new Resume();
-        myResume._name = "Steve Martin";
+        myResume._name = "Sree Ranganath Koonisetti";
 
         myResume._jobs.Add(job1);
         myResume._jobs.Add(job2);
