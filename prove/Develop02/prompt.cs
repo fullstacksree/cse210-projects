@@ -1,17 +1,10 @@
-public class prompt{
-
-    private static List<string> _prompts = new List<string>();
-    private string _file = "prompt.cs";
-    public void Load()
+public class Prompt{
+public  List<string> _prompt = new List<string>
     {
-        catch (FileNotFoundException){
-            using (StreamWriter outputFile = new StreamWriter(_file))
-            {
-                outputFile.WriteLine("What will be my first thing to do on this day?");
-                outputFile.WriteLine("Which scripture keeps me lifted while reading?");
-                outputFile.WriteLine("How can I seek the guidance of my Heavenly Father?");
-            }
-        }
+        "What will be my first thing to do on this day?",
+        "What scripture keeps you lifted while reading?",
+        "How can I seek the guidance of my Heavenly Father?",
+        "When is the last book you read?",
+        "How time you study for this semester?"
     }
 }
-
