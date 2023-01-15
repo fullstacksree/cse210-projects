@@ -1,5 +1,5 @@
-class prompt{
-    void Load()
+public class prompt{
+    public void Load()
     {
         catch (FileNotFoundException){
             using (StreamWriter outputFile = new StreamWriter(_file))
