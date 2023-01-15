@@ -1,11 +1,11 @@
 public class Journal{
 
     // List of entries we have made
-    static List<Entry> _entries = new List<Entry>();
+    private static List<Entry> _entries = new List<Entry>();
 
     // File we are going to save the journal entries
 
-    string _file;
+    private string _file;
 
     // Write a new entry into the journal.
 
@@ -31,7 +31,7 @@ public class Journal{
             entry.Display();
         }
     }
-    void Save(){
+    public void Save(){
         Console.WriteLine("Save the filename as: ");
         _file = Console.ReadLine();
         using (StreamWriter outputfile = new StreamWriter(_file)){
@@ -40,7 +40,7 @@ public class Journal{
         }
         Console.WriteLine("Journal Successfully saved");
     }
-    void Load(){
+    public void Load(){
         Console.WriteLine("Give the filename: ");
         _file = Console.ReadLine();
         _entries.Clear();
