@@ -5,8 +5,6 @@ class Program
     {
         Console.WriteLine("Welcome to Daily Journal");
 
-        bool = true;
-        do {
             Console.WriteLine("\n Select one of the below choices:");
             Console.Write("1. Write 2. Display 3. Load 4. Save 5.Quit");
             int choice = int.Parse(Console.ReadLine());
