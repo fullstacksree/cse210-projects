@@ -5,6 +5,7 @@ class Program
     {
         Console.WriteLine("Welcome to Daily Journal");
         string choice = "0";
+        
         do{
             Console.WriteLine("\n Select one of the below choices:");
             Console.Write("1. Write\n2. Display\n3. Load\n4. Save\n5. Quit");
