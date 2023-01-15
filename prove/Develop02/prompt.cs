@@ -1,4 +1,7 @@
 public class prompt{
+
+    private static List<string> _prompts = new List<string>();
+    private string _file = "prompt.cs";
     public void Load()
     {
         catch (FileNotFoundException){

@@ -1,4 +1,4 @@
-class Journal{
+public class Journal{
 
     // List of entries we have made
     static List<Entry> _entries = new List<Entry>();
@@ -9,7 +9,7 @@ class Journal{
 
     // Write a new entry into the journal.
 
-    void Write()
+    public void Write()
     {
         Entry entry = new Entry();
 
@@ -26,7 +26,7 @@ class Journal{
         entry._answer = Console.ReadLine();
         _entries.Add(entry);
     }
-    void Display(){
+    public void Display(){
         foreach(Entry entry in _entries){
             entry.Display();
         }
