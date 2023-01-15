@@ -9,6 +9,7 @@ class Program
             Console.Write("1. Write 2. Display 3. Load 4. Save 5.Quit");
             int choice = int.Parse(Console.ReadLine());
             Journal myJournal = new Journal();
+            
             Prompt myPrompts = new Prompt();
             switch(choice){
                 case 1:
@@ -28,6 +29,4 @@ class Program
             }
         }
     }
-}internal class Prompt
-{
 }
