@@ -1,7 +1,7 @@
 class Journal{
 
     // List of entries we have made
-    static List<Entry> _entries = new List<Entry>
+    static List<Entry> _entries = new List<Entry>();
 
     // File we are going to save the journal entries
 
@@ -16,20 +16,20 @@ class Journal{
         string dateText = theCurrentTime.ToShortDateString();
 
         entry._date = dateText;
-        Prompt myPrompt = new Prompt();
+        
+        Prompt prompt = new Prompt();
+        
         entry._prompt = prompt.Random();
         Console.Write($"{entry._prompt} ");
 
         entry._answer = Console.ReadLine();
         _entries.Add(entry);
     }
-
     void Display(){
         foreach(Entry entry in _entries){
             entry.Display();
         }
     }
-
     void Save(){
         Console.WriteLine("Save the filename as: ");
         _file = Console.ReadLine();
@@ -39,7 +39,6 @@ class Journal{
         }
         Console.WriteLine("Journal Successfully saved");
     }
-
     void Load(){
         Console.WriteLine("Give the filename: ");
         _file = Console.ReadLine();
