@@ -20,9 +20,6 @@ public class Journal{
         
         Prompt prompt = new Prompt();
         
-        entry._prompt = prompt.Random();
-        Console.Write($"{entry._prompt} ");
-
         entry._answer = Console.ReadLine();
         _entries.Add(entry);
     }
