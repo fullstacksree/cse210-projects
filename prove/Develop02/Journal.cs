@@ -16,7 +16,7 @@ class Journal{
         string dateText = theCurrentTime.ToShortDateString();
 
         entry._date = dateText;
-        Prompt prompt = new Prompt();
+        Prompt myPrompt = new Prompt();
         entry._prompt = prompt.Random();
         Console.Write($"{entry._prompt} ");
 
