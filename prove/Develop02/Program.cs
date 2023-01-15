@@ -28,4 +28,6 @@ class Program
             }
         }
     }
+}internal class Prompt
+{
 }

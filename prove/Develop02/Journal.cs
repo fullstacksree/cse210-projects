@@ -9,7 +9,8 @@ class Journal{
 
     // Write a new entry into the journal.
 
-    void Write(){
+    void Write()
+    {
         Entry entry = new Entry();
 
         DateTime theCurrentTime = DateTime.Now;
