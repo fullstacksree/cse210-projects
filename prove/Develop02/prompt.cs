@@ -11,5 +11,13 @@ public class Prompt
         "How can I seek the guidance of my Heavenly Father?"
         };
     }
+
+
+    public void displayPrompt()
+    {
+        Random index = new Random();
+        int index = AppDomain.Next(0, _prompts.count())
+        Console.WriteLine(String.Format("{0}", _prompts[index]"))
+    }
    
 }
