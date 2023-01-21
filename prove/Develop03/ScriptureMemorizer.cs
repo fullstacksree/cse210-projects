@@ -26,8 +26,11 @@ class ScriptureMemorizer
         {
             int rndIndex = new Random().Next(0, scriptureTextList.Count());
             // will do only replace word if it has not been replaced
-            scriptureTextList[rndIndex] = new string('_', scriptureTextList[rndIndex].Length);
-            wordsRemoved++;
+            if (scriptureTextList[rndIndex].Contains('_') == false)
+            {
+                scriptureTextList[rndIndex] = new string('_', scriptureTextList[rndIndex].Length);
+                wordsRemoved++;
+            }
 
         }while (wordsRemoved != numWordsToRemove);
     }

@@ -4,7 +4,7 @@ class Reference
 {
     private string book, chapter, verse;
 
-    public Reference (string _book, string _chapter, string _verse)
+    public Reference(string _book, string _chapter, string _verse)
     {
         book    = _book;
         chapter = _chapter;
