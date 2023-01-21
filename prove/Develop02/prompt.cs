@@ -4,7 +4,7 @@ public class Prompt
 
     public Prompt()
     {
-        _prompt = new List<string> 
+        _prompt = new List<string>() 
         {
         "What will be my first thing to do on this day?",
         "What scripture keeps you lifted while reading?",
@@ -15,9 +15,9 @@ public class Prompt
 
     public void displayPrompt()
     {
-        Random index = new Random();
-        int index = AppDomain.Next(0, _prompts.count())
-        Console.WriteLine(String.Format("{0}", _prompts[index]"))
+        Random dom = new Random();
+        int index = dom.Next(0, _prompt.Count());
+        Console.WriteLine(String.Format("{0}", _prompt[index]));
     }
    
 }
