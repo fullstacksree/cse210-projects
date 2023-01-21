@@ -19,7 +19,7 @@ class ScriptureMemorizer
 
     public void removeWordsFromText()
     {
-        int numWordsToRemove = new Random().Next(3, 5);
+        int numWordsToRemove = new Random().Next(2, 4);
         int wordsRemoved = 0;
 
         do
