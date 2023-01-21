@@ -14,6 +14,7 @@ class Program
             Console.Write("What would you like to do? ");
             Journal myJournal = new Journal();
             Prompt myPrompts = new Prompt();
+            string _choice = Console.ReadLine();
             switch(choice){
                 case "1":
                     break;
