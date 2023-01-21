@@ -1,0 +1,55 @@
+using System;
+
+class ScriptureMemorizer
+{
+    private Scripture scripture;
+    private List<string> scriptureTextList;
+
+    public ScriptureMemorizer(Scripture _scripture)
+    {
+        scripture = _scripture;
+        scriptureTextList = new List<string>();
+        convertTextToList();
+    }
+
+    private void convertTextToList()
+    {
+        scriptureTextList = scripture.toString().Split(' ').ToList();
+    }
+
+    public void removeWordsFromText()
+    {
+        int numWordsToRemove = new Random().Next(3, 5);
+        int wordsRemoved = 0;
+
+        do
+        {
+            int rndIndex = new Random().Next(0, scriptureTextList.Count());
+            // will do only replace word if it has not been replaced
+            scriptureTextList[rndIndex] = new string('_', scriptureTextList[rndIndex].Length);
+            wordsRemoved++;
+
+        }while (wordsRemoved != numWordsToRemove);
+    }
+
+    public string toString()
+    {
+        return string.Join('_', scriptureTextList);
+    }
+
+    public bool hasWordsLeft()
+    {
+        bool retvalue = false;
+
+        foreach (string word in scriptureTextList)
+        {
+            if (word.Contains('_') == false)
+            {
+                retvalue = true;
+                break;
+            }
+        }
+
+        return retvalue;
+    }
+}
