@@ -49,7 +49,7 @@ class Activity
         displaySpinner(3);
     }
 
-    public void displaySpinner()
+    public void Timer()
     {
         Stopwatch stopwatch = new Stopwatch();
         stopwatch.Start();
@@ -70,7 +70,6 @@ class Activity
 
         Console.Write(" ");
     }
-
     public void displayGetSessionLength()
     {
         Console.WriteLine("How long you would like your session would be /in seconds/");
