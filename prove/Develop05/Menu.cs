@@ -4,7 +4,6 @@ class Menu
 {
     private List<string> mainMenu, generateGoalMenu;
 
-    private int mainMenuSelection;
     public Menu()
     {
         mainMenu = new List<string>
@@ -36,15 +35,12 @@ class Menu
     {
         Console.WriteLine(string.Format("You have {0} points \n", _fullScore));
     }
-    public int choice()
+    public int Choice()
     {
         Console.Write("Select an option from the menu: ");
         return int.Parse(Console.ReadLine());
     }
-    public int GetMainMenuSelection()
-    {
-        return mainMenuSelection;
-    }
+    
     public int DislayGetGenerateNewGoalMenu()
     {
         foreach (string menuItem in generateGoalMenu)
@@ -53,15 +49,5 @@ class Menu
         }
         Console.Write("Select an option from the menu: ");
         return int.Parse(Console.ReadLine());
-    }
-
-    internal int DisplayGetMainMenu()
-    {
-        throw new NotImplementedException();
-    }
-
-    internal void DisplayScore(string v)
-    {
-        throw new NotImplementedException();
     }
 }

@@ -23,6 +23,17 @@ public class ReflectingActivity
             "How did you apply that guidance in different aspects of life",
         };
     }
+
+    private void setActivityName(string v)
+    {
+        throw new NotImplementedException();
+    }
+
+    private void setDescription(string v)
+    {
+        throw new NotImplementedException();
+    }
+
     public void runActivity()
     {
         runActivityParentStart();
@@ -32,6 +43,12 @@ public class ReflectingActivity
         displayQueries();
         runActivityParentEnd();
     }
+
+    private void runActivityParentStart()
+    {
+        throw new NotImplementedException();
+    }
+
     public void displayPrompt()
     {
         Console.Clear();

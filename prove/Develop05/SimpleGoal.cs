@@ -4,8 +4,10 @@ class SimpleGoal : Goal
 
     private bool goalComplete;
 
-    
-    public SimpleGoal(string _goalTitle, string _goalDescription, string _fullScore, bool _goalComplete) : base (_goalTitle, _goalDescription, _fullScore)
+    public SimpleGoal()
+    {
+    }
+    public SimpleGoal(string _goalTitle, string _goalDescription, int _fullScore, bool _goalComplete) : base (_goalTitle, _goalDescription, _fullScore)
     {
         goalComplete = _goalComplete;
     }

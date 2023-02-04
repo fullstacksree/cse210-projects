@@ -1,12 +1,14 @@
 using System;
 class ChecklistGoal : Goal
 {
-    private const int goalType = 1;
+    private const int goalType = 3;
 
     private bool goalComplete;
 
-
-    public ChecklistGoal(string _goalTitle, string _goalDescription, string _fullScore, bool _goalComplete) : base (_goalTitle, _goalDescription, _fullScore)
+    public ChecklistGoal()
+    {
+    }
+    public ChecklistGoal(string _goalTitle, string _goalDescription, int _fullScore, bool _goalComplete) : base (_goalTitle, _goalDescription, _fullScore)
     {
         goalComplete = _goalComplete;
     }

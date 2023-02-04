@@ -14,7 +14,7 @@ class Program
             Menu menu = new Menu();
             menu.DisplayScore(wholeGoals.getFullScore());
             menu.DisplayMainMenu();
-            choice = menu.DisplayGetMainMenu();
+            choice = menu.Choice();
             switch (choice)
             {
                 case 1:
@@ -28,6 +28,22 @@ class Program
                             goal.DisplayGetGoalDescription();
                             goal.DisplayGetFullScore();
                             break;
+
+                        case 2:
+                            goal = new EternalGoal();
+                            goal.DisplayGetGoalTitle();
+                            goal.DisplayGetGoalDescription();
+                            goal.DisplayGetFullScore();
+                            break;
+
+                        case 3:
+                            goal = new ChecklistGoal();
+                            goal.DisplayGetGoalTitle();
+                            goal.DisplayGetGoalDescription();
+                            goal.DisplayGetFullScore();
+                            break;
+
+
                     }
                     if (goal != null)
                     {
@@ -44,7 +60,7 @@ class Program
                     wholeGoals.LoadGoals();
                     break;
                 case 5:
-                    wholeGoals.RecordEvent();
+                    wholeGoals.DisplayGoalRecordEvent();
                     break;
                 case 6:
                     flag = false;

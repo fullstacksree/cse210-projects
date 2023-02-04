@@ -1,12 +1,14 @@
 using System;
 class EternalGoal : Goal
 {
-    private const int goalType = 1;
+    private const int goalType = 2;
 
     private bool goalComplete;
 
-
-    public EternalGoal(string _goalTitle, string _goalDescription, string _fullScore, bool _goalComplete) : base (_goalTitle, _goalDescription, _fullScore)
+    public EternalGoal()
+    {
+    }
+    public EternalGoal(string _goalTitle, string _goalDescription, int _fullScore, bool _goalComplete) : base (_goalTitle, _goalDescription, _fullScore)
     {
         goalComplete = _goalComplete;
     }

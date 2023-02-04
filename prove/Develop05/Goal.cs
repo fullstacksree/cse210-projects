@@ -1,14 +1,18 @@
 using System;
 
-public class Goal
+public abstract class Goal
 {
     private string _goalTitle;
 
     private string _goalDescription;
 
-    private string _fullScore;
+    private int _fullScore;
 
-    public Goal(string goalTitle, string goalDescription, string fullScore)
+    public Goal()
+    {
+    }
+
+    public Goal(string goalTitle, string goalDescription, int fullScore)
     {
         _goalTitle = goalTitle;
         _goalDescription = goalDescription;
@@ -19,7 +23,7 @@ public class Goal
     {
         return _goalTitle;
     }
-    public void choice()
+    public void DisplayGetGoalTitle()
     {
         Console.Write("What is the title of the goal? ");
         _goalTitle = Console.ReadLine();
@@ -33,35 +37,21 @@ public class Goal
         Console.Write("What is the short description of the goal? ");
         _goalDescription = Console.ReadLine();
     }
-    public string getFullScore()
+    public int getFullScore()
     {
         return _fullScore;
     }
-    public string DisplayGetFullScore(string fullScore)
+    public void DisplayGetFullScore()
     {
-        _fullScore = fullScore;
-        return _fullScore;
+        Console.Write("How many plans associated with this goal");
+        _fullScore = int.Parse(Console.ReadLine());
     }
     public void DisplayScore()
     {
         Console.WriteLine(string.Format("You have now {0} points", _fullScore.ToString()));
     }
-    public virtual string ToCSVRecord()
-    {
-        return string.Format("{0}|{1}|{2}", getGoalTitle(), getGoalDescription(), getFullScore());
-    }
-    public virtual void RecordEvent()
-    {
-        Console.WriteLine(string.Format("Congratulations! You earned {0}", getFullScore()));
-    }
+    public abstract string ToCSVRecord();
+    public abstract void RecordEvent();
 
-    internal void DisplayGetGoalTitle()
-    {
-        throw new NotImplementedException();
-    }
-
-    internal void DisplayGetFullScore()
-    {
-        throw new NotImplementedException();
-    }
+    
 }

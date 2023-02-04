@@ -3,9 +3,9 @@ class WholeGoals
 {
     private List<Goal> wholeGoals = new List<Goal>();
 
-    private string fullScore;
+    private int fullScore;
 
-    public string getFullScore()
+    public int getFullScore()
     {
         return fullScore;
     }
@@ -62,7 +62,7 @@ class WholeGoals
             switch (goalType)
             {
                 case 1:
-                    goal = new SimpleGoal(goalParts[1], goalParts[2], goalParts[3], bool.Parse(goalParts[4]));
+                    goal = new SimpleGoal(goalParts[1], goalParts[2], int.Parse(goalParts[3]), bool.Parse(goalParts[4]));
                     break;
             }
             if (goal != null && wholeGoals.Contains(goal) == false)
@@ -90,10 +90,5 @@ class WholeGoals
         fullScore += wholeGoals[recordEvent].getFullScore();
 
         Console.WriteLine(string.Format("You have now {0} points", fullScore.ToString()));
-    }
-
-    internal void RecordEvent()
-    {
-        throw new NotImplementedException();
     }
 }
