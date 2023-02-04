@@ -1,0 +1,9 @@
+0
+2|Simple Goal 2|Simple Goal 2 Desc|100|False
+1|Simple Goal 1|Simple Goal 1 Desc|50|False
+0
+2|Eternal Goal 2|Eternal Goal 2 Desc|200|False
+1|Eternal Goal 1|Eternal Goal 1 Desc|100|False
+0
+2|Checklist Goal 2|Checklist Goal 2 Desc|300|False
+1|Checklist Goal 1|Checklist Goal 1 Desc|200|False
