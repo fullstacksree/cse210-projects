@@ -7,7 +7,7 @@ public class Cart
         Console.WriteLine($"Total (shipping included): ${billing}\n");
     }
 
-    public void DisplayShippingLabel(string shippingLabel)
+    public void GenerateShippingLabel(string shippingLabel)
     {
         Console.WriteLine(shippingLabel);
     }
@@ -18,7 +18,7 @@ public class Cart
     }
     public void DisplayCompleteReport(string shippingLabel, string packagingLabel, float billing)
     {
-        DisplayShippingLabel(shippingLabel);
+        GenerateShippingLabel(shippingLabel);
         GeneratePackagingLabel(packagingLabel);
         DisplayOrderDetails(billing);
     }

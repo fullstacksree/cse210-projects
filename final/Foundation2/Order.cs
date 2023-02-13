@@ -5,16 +5,13 @@ public class Order
     private List<Product> _productsList;
     private Customer _customer;
     private float _shippingCost;
-    public Order(List<Product> productsList, List<Order> ordersList, Customer customer, float shippingCost)
+    public Order(List<Product> productsList, Customer customer, float shippingCost)
     {
         _productsList = productsList;
         _customer = customer;
         _shippingCost = shippingCost;
     }
 
-    public Order(List<Product> productsList, Customer customer, float shippingCost)
-    {
-    }
 
     public List<Product> GetProductsList()
     {
@@ -47,7 +44,7 @@ public class Order
         {
             productsCost += product.ComputeTotalPrice();
         }
-        return productsCost * _shippingCost;
+        return productsCost + _shippingCost;
     }
     
 }

@@ -10,7 +10,7 @@ class Program
     }
     static void Main(string[] args)
     {
-        Program demo = new Program();
-        demo._connector.Run(); 
+        Program trial = new Program();
+        trial._connector.Run(); 
     }
 }
