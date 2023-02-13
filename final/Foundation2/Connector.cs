@@ -18,25 +18,25 @@ public class Connector
     
     public void Run()
     {
-        List<List<string>> productNamesList = new List<List<string>> {
+        List<List<string>> productNames = new List<List<string>> {
             new List<string>{ "Red Roses", "Pink Boquet" },
             new List<string>{ "Pink Roses", "Yellow Roses", "Flower Boquet" },
             new List<string>{ "Polo Cap", "Black Hoody", "Golf Gloves" }
         };
         
-        List<List<string>> productIdsList = new List<List<string>> {
+        List<List<string>> productIds = new List<List<string>> {
             new List<string>{"000AL01", "000BB01" },
             new List<string>{"000AL03", "000AL04", "000BB03" },
             new List<string>{"000PC02", "000HB02", "000GL05" }
         };
         
-        List<List<float>> productPricesList = new List<List<float>> {
+        List<List<float>> productPrices = new List<List<float>> {
             new List<float>{05f, 08f},
             new List<float>{05f, 05f, 08f},
             new List<float>{15f, 50f, 25f}
         };
         
-        List<List<int>> productQuantitiesList = new List<List<int>> {
+        List<List<int>> productQuantities = new List<List<int>> {
             new List<int>{2, 1},
             new List<int>{2, 2, 1},
             new List<int>{2, 2, 1},
@@ -46,7 +46,7 @@ public class Connector
         List<List<Product>> productsCollectionList = new List<List<Product>>();
 
         
-        for (int i = 0; i < productNamesList.Count(); i++)
+        for (int i = 0; i < productNames.Count(); i++)
         {
             productsCollectionList.Add(new List<Product>());
         }
@@ -54,14 +54,14 @@ public class Connector
         string packagingLabel;
         List<string> packagingLabelsList = new List<string>();
 
-        for (int i = 0; i < productNamesList.Count(); i++)
+        for (int i = 0; i < productNames.Count(); i++)
         {
             packagingLabel = "";
 
-            for (int k = 0; k < productNamesList[i].Count(); k++)
+            for (int k = 0; k < productNames[i].Count(); k++)
             {
-                productsCollectionList[i].Add(new Product(productNamesList[i][k], productIdsList[i][k], productPricesList[i][k], productQuantitiesList[i][k]));
-                packagingLabel += $"\nItem: {productNamesList[i][k]} | SKU: {productIdsList[i][k]}\n";
+                productsCollectionList[i].Add(new Product(productNames[i][k], productIds[i][k], productPrices[i][k], productQuantities[i][k]));
+                packagingLabel += $"\nItem: {productNames[i][k]} | SKU: {productIds[i][k]}\n";
             }
 
             packagingLabelsList.Add(packagingLabel);
