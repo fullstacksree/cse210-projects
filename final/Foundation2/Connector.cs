@@ -30,13 +30,15 @@ public class Connector
             new List<string>{"000PC02", "000HB02", "000GL05" }
         };
         
-        List<List<float>> productPrices = new List<List<float>> {
+        List<List<float>> productPrices = new List<List<float>> 
+        {
             new List<float>{05f, 08f},
             new List<float>{05f, 05f, 08f},
             new List<float>{15f, 50f, 25f}
         };
         
-        List<List<int>> productQuantities = new List<List<int>> {
+        List<List<int>> productQuantities = new List<List<int>> 
+        {
             new List<int>{2, 1},
             new List<int>{2, 2, 1},
             new List<int>{2, 2, 1},
