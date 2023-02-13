@@ -41,9 +41,9 @@ class Activity
     {
         endMessage = string.Format("You have finished another {0} seconds of the {1}", UserSessionLengthInput, activityName);
 
-        Console.WriteLine();
-        Console.WriteLine("Well done!");
-        displaySpinner(3);
+       /* Console.WriteLine();*/
+       // Console.WriteLine("Well done!");
+       /*displaySpinner(3);
         Console.WriteLine();
         Console.WriteLine(endMessage);
         Console.WriteLine();
@@ -93,6 +93,6 @@ class Activity
 
     public void runActivityParentEnd()
     {
-        displayEndMessage();
+        displayEndMessage();*/
     }
 }

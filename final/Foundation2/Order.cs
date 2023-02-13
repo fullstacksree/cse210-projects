@@ -11,6 +11,11 @@ public class Order
         _customer = customer;
         _shippingCost = shippingCost;
     }
+
+    public Order(List<Product> productsList, Customer customer, float shippingCost)
+    {
+    }
+
     public List<Product> GetProductsList()
     {
         return _productsList;

@@ -41,7 +41,7 @@ public class ReflectingActivity
         displayCountDown(5);
         Console.Clear();
         displayQueries();
-        runActivityParentEnd();
+        
     }
 
     private void runActivityParentStart()

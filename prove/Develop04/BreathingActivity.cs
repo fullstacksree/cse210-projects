@@ -15,15 +15,15 @@ public class BreathingActivity
         Console.Clear();
 
         Console.WriteLine("Get Start...");
-        _activity.Timer();
+        //_activity.Timer();
 
         Countdown();
 
         Console.WriteLine("Nicely done!");
-        _activity.Timer();
+        //_activity.Timer();
 
         Console.WriteLine($"You have done another {_timeduration} seconds of breathing activity");
-        _activity.Timer();
+        //_activity.Timer();
         Console.Clear();
 
     }
