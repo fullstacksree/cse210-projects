@@ -2,7 +2,7 @@ using System;
 
 public class Cart
 {
-    public void DisplayOrderDetails(float billing)
+    public void ShowOrderDetails(float billing)
     {
         Console.WriteLine($"Total (shipping included): ${billing}\n");
     }
@@ -20,6 +20,6 @@ public class Cart
     {
         GenerateShippingLabel(shippingLabel);
         GeneratePackagingLabel(packagingLabel);
-        DisplayOrderDetails(billing);
+        ShowOrderDetails(billing);
     }
 }

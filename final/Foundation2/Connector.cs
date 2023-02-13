@@ -61,7 +61,7 @@ public class Connector
             for (int k = 0; k < productNames[i].Count(); k++)
             {
                 productsCollectionList[i].Add(new Product(productNames[i][k], productIds[i][k], productPrices[i][k], productQuantities[i][k]));
-                packagingLabel += $"\nItem: {productNames[i][k]} | SKU: {productIds[i][k]}\n";
+                packagingLabel += $"\nItem: {productNames[i][k]} | UPC: {productIds[i][k]}\n";
             }
 
             packagingLabelsList.Add(packagingLabel);
