@@ -2,23 +2,23 @@ using System;
 
 public class Swimming : Activity
 {
-    private int _laps;
+    private int _numberOfLaps;
 
-    public Swimming(string date, double length, int laps): base(date, length)
+    public Swimming(string date, double length, int numberOfLaps): base(date, length)
     {
-        _laps = laps;
+        _numberOfLaps = numberOfLaps;
     }
-public double GetLaps()
+    public double GetNumberOfLaps()
     {
-        return _laps;
+        return _numberOfLaps;
     }
-    public void SetLaps(int laps)
+    public void SetNumberOfLaps(int numberOfLaps)
     {
-        _laps = laps;
+        _numberOfLaps = numberOfLaps;
     }
     public override double CalculateDistance()
     {
-        double distance = Math.Round(_laps * 50 / 1000 * 0.62, 1);
+        double distance = Math.Round(_numberOfLaps * 50 / 1000 * 0.62, 1);
         return distance;
     }
 
