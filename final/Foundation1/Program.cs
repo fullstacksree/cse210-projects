@@ -9,7 +9,7 @@ class Program
         Video video1 = new Video();
         video1._title = "Web Scraping Tutorial using Python and BeautifulSoup in Hindi";
         video1._author = "CodewithHarry";
-        video1._length = 3120;
+        video1._lengthInSeconds = 3120;
         Comment comment1Video1 = new Comment();
         comment1Video1._text = "Doing a great job!!! thank you for making scrapping so easy...please make videos on web crawling";
         comment1Video1._author = "Jai Gupta";
@@ -23,7 +23,7 @@ class Program
         Video video2 = new Video();
         video2._title = "Using Chat GPT for web desing (AI for web designers)";
         video2._author = "Tristan Parker";
-        video2._length = 692;
+        video2._lengthInSeconds = 692;
         Comment comment1Video2 = new Comment();
         comment1Video2._text = "Thanks Tristan, I really like the idea of using it for colour palate generation specifically";
         comment1Video2._author = "Sam Roff";
@@ -37,7 +37,7 @@ class Program
         Video video3 = new Video();
         video3._title = "C# Programming - Creating Basic Classes, Methods, and Properties";
         video3._author = "Caleb Curry";
-        video3._length = 480;
+        video3._lengthInSeconds = 480;
         Comment comment1Video3 = new Comment();
         comment1Video3._text = "The analogy of a class to the header column of a spreadsheet and instances as a data row below it encapsulates (pun intended) the concept wonderfully explained";
         comment1Video3._author = "Robert Pardinas";
